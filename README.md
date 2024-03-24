@@ -1,40 +1,68 @@
-# hockey-calculations
+Based on the detailed improvements and the new structure of your project, let's update the `README.md` to reflect these enhancements comprehensively.
 
+# Hockey Gap Analysis Package
 
-### Summary of Improvements
+## Overview
 
-The original notebook focused on analyzing gap control in a sports context, specifically examining the distance between the puck and players during a game. Based on the initial review, several improvements were implemented to enhance the analysis's depth, efficiency, and utility. These improvements include:
+The Hockey Gap Analysis package offers a sophisticated toolkit for analyzing gap control strategies in hockey. Leveraging spatial indexing, advanced analytics, and visualizations, it provides deep insights into player positioning, movement dynamics, and defensive effectiveness throughout a game.
 
-1. **Vectorization and Performance Optimization**:
-   - Introduced spatial indexing using `KDTree` from `scipy.spatial` for efficient nearest neighbor searches, significantly improving the performance of finding the closest player to the puck.
-   - Moved away from row-wise iterations using `iterrows()` to more efficient pandas operations and vectorized numpy functions where applicable.
+## Key Features
 
-2. **Expanded Gap Control Analysis**:
-   - Extended the analysis to include multiple opposing players, providing a more comprehensive view of defensive strategies and effectiveness.
-   - Included consideration of different zones within the play area (defensive, neutral, and offensive) to understand how gap control strategies vary across the field.
+### Spatial Analysis Improvements
+- **Efficient Player Tracking**: Utilizes `KDTree` from `scipy.spatial` for rapid nearest-neighbor searches, optimizing the identification of the closest player to the puck and facilitating dynamic gap analysis.
+- **Advanced Gap Measurement**: Incorporates calculations for optimal gap distances between players, enabling a detailed examination of defensive strategies across different zones on the ice.
 
-3. **Visualization**:
-   - Implemented visualizations using Matplotlib to graphically represent player positions relative to the puck and gap distances over time, enhancing the interpretability and accessibility of the analysis.
+### Analytics Module
+- **Player Velocity and Acceleration**: Calculates player velocities and accelerations, offering insights into player dynamics and responsiveness.
+- **Team and Player Efficiency**: Analyzes team velocity patterns and individual player efficiencies, providing a comprehensive view of performance and strategy.
 
-4. **Efficiency in Identifying Players**:
-   - Optimized the process of identifying both the player with the puck and the closest opponents, aiming for a more efficient analysis that reduces redundancy in calculations.
+### Visualization Enhancements
+- **Interactive Gap Control Visualization**: Features advanced plotting capabilities, including player movement vectors and gap distances, to visually represent strategic dynamics on the ice.
 
-5. **Robustness and Edge Cases**:
-   - Addressed potential edge cases, such as when the puck is at the boundary of defined zones or when multiple players have identical distances to the puck, ensuring the analysis remains accurate under various scenarios.
+### Modular and Scalable Design
+- Organized into modular components for easy maintenance and scalability, allowing for the integration of new analysis methods and data sources.
 
-### Reasons for Improvements
+## Installation
 
-The improvements were driven by the need to enhance the notebook's efficiency, accuracy, and comprehensiveness. Vectorization and spatial indexing directly address performance bottlenecks, crucial for handling large datasets typical in sports analytics. Expanding the gap control analysis and incorporating visualizations make the insights derived from the data more nuanced and actionable, providing a deeper understanding of game dynamics. Optimizing player identification and ensuring robustness enhance the reliability of the analysis, making it a more valuable tool for coaches, analysts, and researchers.
+1. Clone this repository or download the package.
+2. Install the required dependencies:
 
-### Areas for Continued Work
+```bash
+pip install -r requirements.txt
+```
 
-While significant enhancements have been made, several areas could benefit from further development:
+3. Import the package in your Python scripts or Jupyter notebooks:
 
-- **Dynamic Zone Analysis**: Refining the analysis of different play areas could involve dynamic zone definitions based on game context, potentially offering more tailored insights into team strategies.
-- **Advanced Visualizations**: Developing more sophisticated visualizations, such as heatmaps of player movements or gap control effectiveness, could offer deeper insights into spatial dynamics and player performance.
-- **Machine Learning Integration**: Incorporating machine learning models to predict outcomes based on gap control metrics or to cluster players based on their spatial behavior could extend the analysis's utility.
-- **Real-Time Analysis Capabilities**: Adapting the methodology for real-time analysis could provide teams with actionable insights during games, offering a significant competitive advantage.
+```python
+from hockey_gap_analysis import spatial_analysis, analytics, visualization
+```
 
-### Final Notes
+## Usage
 
-The refinements introduced to the notebook represent a substantial step forward in analyzing gap control in sports analytics. By focusing on performance optimization, expanding the scope of analysis, and enhancing data visualization, the notebook now offers more comprehensive, accessible, and actionable insights. Continuing to build on these improvements, especially by incorporating advanced analytical techniques and exploring real-time applications, could further revolutionize how teams assess and strategize around gap control. The iterative nature of this process underscores the importance of ongoing refinement and adaptation to new data, technologies, and analytical methodologies.
+The package is structured to facilitate easy access to its functionalities, divided among different modules for spatial analysis, player analytics, and visualization. Example usage can be found in the included Jupyter notebook (`ExampleUsage.ipynb`), demonstrating how to load data, perform gap control analysis, and visualize the results.
+
+## Testing
+
+Comprehensive unit tests are included in the `tests/` directory, ensuring the reliability and accuracy of the package's functionalities. To run the tests:
+
+```bash
+python -m unittest discover -s tests
+```
+
+## Contributing
+
+Contributions to the Hockey Gap Analysis package are welcome. Please feel free to submit pull requests or open issues to discuss proposed changes or report bugs.
+
+## Future Directions
+
+- **Dynamic Zone Analysis**: Further refine the dynamic definitions of play areas based on the evolving context of the game.
+- **Machine Learning Models**: Integrate predictive modeling to forecast play outcomes or player performance based on spatial and temporal data.
+- **Real-Time Analysis**: Explore the feasibility of adapting the package for real-time data analysis during games.
+
+## License
+
+                    GNU GENERAL PUBLIC LICENSE
+
+---
+
+By adopting a modular and comprehensive approach to hockey analytics, this package aims to empower teams and analysts with actionable insights into gap control and defensive strategies, setting a new standard for sports analytics software.
