@@ -63,4 +63,4 @@ Contributions to the Hockey Gap Analysis package are welcome. Please feel free t
 
 ---
 
-By adopting a modular and comprehensive approach to hockey analytics, this package aims to empower teams and analysts with actionable insights into gap control and defensive strategies, setting a new standard for sports analytics software.
+\
