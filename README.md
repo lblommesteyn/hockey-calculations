@@ -1,5 +1,3 @@
-Based on the detailed improvements and the new structure of your project, let's update the `README.md` to reflect these enhancements comprehensively.
-
 # Hockey Gap Analysis Package
 
 ## Overview
@@ -15,6 +13,9 @@ The Hockey Gap Analysis package offers a sophisticated toolkit for analyzing gap
 ### Analytics Module
 - **Player Velocity and Acceleration**: Calculates player velocities and accelerations, offering insights into player dynamics and responsiveness.
 - **Team and Player Efficiency**: Analyzes team velocity patterns and individual player efficiencies, providing a comprehensive view of performance and strategy.
+- **Distance Covered**: Calculates the total distance covered by each player.
+- **Player Speed**: Calculates the speed of each player.
+- **Team Coverage Area**: Calculates the area covered by a team at each timestamp using the Convex Hull method.
 
 ### Visualization Enhancements
 - **Interactive Gap Control Visualization**: Features advanced plotting capabilities, including player movement vectors and gap distances, to visually represent strategic dynamics on the ice.
@@ -61,7 +62,7 @@ Contributions to the Hockey Gap Analysis package are welcome. Please feel free t
 
 ## License
 
-                    GNU GENERAL PUBLIC LICENSE
+This project is licensed under the GNU General Public License.
 
 ---
 
