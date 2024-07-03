@@ -66,4 +66,4 @@ This project is licensed under the GNU General Public License.
 
 ---
 
-By adopting a modular and comprehensive approach to hockey analytics, this package aims to empower teams and analysts with actionable insights into gap control and defensive strategies, setting a new standard for sports analytics software.
+\
